@@ -67,3 +67,6 @@ export function getLogger(options: Options = {}) {
 
     return logger;
 }
+
+export type Logger = ReturnType<typeof getLogger>;
+
