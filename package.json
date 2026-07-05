@@ -55,6 +55,9 @@
         "winston": "^3.17.0",
         "winston-transport": "^4.9.0"
     },
+    "overrides": {
+        "brace-expansion": "^5.0.7"
+    },
     "devDependencies": {
         "@biomejs/biome": "^2.4.13",
         "@eslint/js": "^10.0.1",
