@@ -69,4 +69,3 @@ export function getLogger(options: Options = {}) {
 }
 
 export type Logger = ReturnType<typeof getLogger>;
-
