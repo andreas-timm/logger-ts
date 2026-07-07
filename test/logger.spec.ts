@@ -1,8 +1,8 @@
-import { afterEach, describe, expect, it } from "bun:test";
+import { afterEach, describe, expect, expectTypeOf, it } from "bun:test";
 import { existsSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { getLogger } from "../src/index.ts";
+import { getLogger, type Logger } from "../src/index.ts";
 
 const tempDirs: string[] = [];
 
@@ -33,5 +33,9 @@ describe("getLogger", () => {
         logger.info("ignored");
 
         expect(existsSync(output)).toBeFalse();
+    });
+
+    it("types the logger correctly", () => {
+        expectTypeOf(getLogger()).toEqualTypeOf<Logger>();
     });
 });

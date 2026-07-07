@@ -1,0 +1,4 @@
+interface:
+  display_name: "@andreas-timm/logger"
+  short_description: "Use @andreas-timm/logger correctly"
+  default_prompt: "Use $andreas-timm-logger to add logging with @andreas-timm/logger."
